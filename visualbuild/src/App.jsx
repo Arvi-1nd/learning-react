@@ -2,6 +2,8 @@ import React from "react";
 import MyButton from "./components/MyButton";
 import Profile from "./components/Profile";
 import Rendering from "./components/Rendering";
+import Showing from "./components/Showing";
+import Respond from "./components/Respond";
 
 const App = () => {
   return (
@@ -9,6 +11,8 @@ const App = () => {
       <MyButton />
       <Profile />
       <Rendering />
+      <Showing />
+      <Respond />
     </div>
   );
 };
