@@ -1,18 +1,15 @@
 import React from "react";
-import MyButton from "./components/MyButton";
-import Profile from "./components/Profile";
-import Rendering from "./components/Rendering";
-import Showing from "./components/Showing";
-import Respond from "./components/Respond";
+import Header from "./components/Header";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
 
 const App = () => {
+    let user = "Kesavan";
   return (
     <div>
-      <MyButton />
-      <Profile />
-      <Rendering />
-      <Showing />
-      <Respond />
+      <Header user = {user} />
+        <Content/>
+      <Footer user = "Murugesan"/>
     </div>
   );
 };
