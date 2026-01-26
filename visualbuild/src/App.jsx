@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 const App = () => {
     let user = "Kesavan";
   return (
-    <div>
+    <div className="App">
       <Header user = {user} />
         <Content/>
       <Footer user = "Murugesan"/>
