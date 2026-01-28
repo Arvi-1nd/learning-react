@@ -39,11 +39,6 @@ const Content = () =>{
 
     return(
         <main>
-            <h1 style={headingStyle}>Main Content - { user }</h1>
-            <Button onClick={printSomething}> Click Me!</Button>
-            <NewButton onClick={(e)=>{
-                printSomething1(e)
-            }}> Duplicate</NewButton>
             <CounterApp />
         </main>
     )
