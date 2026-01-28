@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components";
+import CounterApp from "./CounterApp.jsx";
 
 let headingStyle = {
     backgroundColor: "brown",
@@ -21,20 +22,29 @@ let NewButton = styled(Button)
     `
 
 const Content = () =>{
-
-    function printSomething(){
+    let user = "kesavan"
+    function printSomething(e){
+        console.log(e.target.innerText)
         console.log("Hello")
+        user = "Murugesan"
+        console.log( user);
      }
-    function printSomething1(user){
-        console.log("Hello", user)
+    function printSomething1(event){
+        // console.log( event.target.innerText );
+        // console.log("Hello World");
+        user = "Rangaswamy"
+        console.log( user );
     }
+
+
     return(
         <main>
-            <h1 style={headingStyle}>Main Content</h1>
+            <h1 style={headingStyle}>Main Content - { user }</h1>
             <Button onClick={printSomething}> Click Me!</Button>
-            <NewButton onClick={()=>{
-                printSomething1("kesavan")
+            <NewButton onClick={(e)=>{
+                printSomething1(e)
             }}> Duplicate</NewButton>
+            <CounterApp />
         </main>
     )
 }
